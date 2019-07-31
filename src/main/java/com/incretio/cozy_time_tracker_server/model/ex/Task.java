@@ -2,16 +2,30 @@ package com.incretio.cozy_time_tracker_server.model.ex;
 
 import com.incretio.cozy_time_tracker_server.model.pojo.TaskPOJO;
 import com.incretio.cozy_time_tracker_server.model.pojo.TaskStatus;
+import com.incretio.cozy_time_tracker_server.model.vi.TaskVi;
 import com.incretio.cozy_time_tracker_server.model.vo.TaskVo;
 import com.incretio.cozy_time_tracker_server.model.vo.helper.ToVoConvertable;
+import com.incretio.cozy_time_tracker_server.utils.Condition;
 import com.incretio.cozy_time_tracker_server.utils.DateTimeUtil;
 
-import java.util.Objects;
+import java.util.Collections;
+import java.util.List;
 
 public class Task extends TaskPOJO implements ToVoConvertable<TaskVo> {
-    public Task(int id, int tagId, String number, String name, String description, long timeLeftToday, long timeLeftAll,
+    public Task(int id, List<Integer> tagsList, String number, String name, String description, long timeLeftToday,
+                long timeLeftAll,
                 long timeLimit, TaskStatus taskStatus) {
-        super(id, tagId, number, name, description, timeLeftToday, timeLeftAll, timeLimit, taskStatus);
+        super(id, tagsList, number, name, description, timeLeftToday, timeLeftAll, timeLimit, taskStatus);
+    }
+
+    public Task(int id, int tagsList, String number, String name, String description, long timeLeftToday,
+                long timeLeftAll, long timeLimit, TaskStatus taskStatus) {
+        this(id, Collections.singletonList(tagsList), number, name, description, timeLeftToday, timeLeftAll, timeLimit,
+             taskStatus);
+    }
+
+    public Task() {
+        setTaskStatus(TaskStatus.STOPPED);
     }
 
     private long startedTimeInMs = 0;
@@ -47,63 +61,11 @@ public class Task extends TaskPOJO implements ToVoConvertable<TaskVo> {
         setTimeLeftToday(getTimeLeftToday() + ms);
         setTimeLeftAll(getTimeLeftAll() + ms);
     }
-}
 
-class Condition {
-    private Object value;
-    private boolean executed = false;
-
-    private Condition() {
-        // noop
-    }
-
-    private Condition(Object value) {
-        this.value = value;
-    }
-
-    static Condition build() {
-        return new Condition();
-    }
-
-    static Condition build(Object value) {
-        return new Condition(value);
-    }
-
-    Condition ifThen(boolean value, Runnable action) {
-        if (value) {
-            action.run();
-        }
-        return this;
-    }
-
-    Condition elseIfThen(boolean value, Runnable action) {
-        if (!executed && value) {
-            action.run();
-        }
-        return this;
-    }
-
-    void elseThen(Runnable action) {
-        if (!executed) {
-            action.run();
-        }
-    }
-
-    Condition ifEqualsThen(Object value, Runnable action) {
-        if (this.value == null) {
-            throw new UnsupportedOperationException("Value of Condition is not define!");
-        }
-        ifThen(Objects.equals(this.value, value), action);
-        return this;
-    }
-
-    Condition elseIfEqualsThen(Object value, Runnable action) {
-        if (this.value == null) {
-            throw new UnsupportedOperationException("Value of Condition is not define!");
-        }
-        if (!executed) {
-            ifEqualsThen(Objects.equals(this.value, value), action);
-        }
-        return this;
+    public void fillFrom(TaskVi taskVi) {
+        setNumber(taskVi.getNumber());
+        setName(taskVi.getName());
     }
 }
+
+

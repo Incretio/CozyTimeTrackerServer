@@ -5,6 +5,7 @@ import com.incretio.cozy_time_tracker_server.dao.TasksDAO;
 import com.incretio.cozy_time_tracker_server.exception.NoSuchTaskException;
 import com.incretio.cozy_time_tracker_server.helpers.TextSplitOnNumberAndName;
 import com.incretio.cozy_time_tracker_server.model.ex.Task;
+import com.incretio.cozy_time_tracker_server.model.vi.TaskVi;
 import com.incretio.cozy_time_tracker_server.model.vo.TagVo;
 import com.incretio.cozy_time_tracker_server.model.vo.TaskVo;
 import com.incretio.cozy_time_tracker_server.model.vo.helper.ConvertVo;
@@ -34,7 +35,7 @@ public class TasksListService {
     @Path ("tags_list")
     @Produces (MediaType.APPLICATION_JSON)
     public List<TagVo> tagList(@Context final HttpServletRequest req, @Context final HttpServletResponse res) {
-        res.setHeader("Access-Control-Allow-Origin", "*");
+        //        res.setHeader("Access-Control-Allow-Origin", "*");
         return convertVo.toVo(tagsDAO.getTagsList());
     }
 
@@ -73,6 +74,16 @@ public class TasksListService {
             tasksDAO.addTask(textSplitOnNumberAndName.getNumber(), textSplitOnNumberAndName.getName(), tagId);
         }
         return convertVo.toVo(tasksDAO.getTasksList(tagId));
+    }
+
+    @POST
+    @Path ("task/update/{taskId}")
+    @Consumes (MediaType.APPLICATION_JSON)
+    @Produces (MediaType.APPLICATION_JSON)
+    public TaskVo updateTask(@Context final HttpServletRequest req, @Context final HttpServletResponse res,
+                             @PathParam ("taskId") int taskId, TaskVi taskVi) {
+        Task task = tasksDAO.update(taskId, taskVi);
+        return convertVo.toVo(task);
     }
 
 }

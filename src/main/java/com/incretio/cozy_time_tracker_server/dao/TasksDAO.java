@@ -2,8 +2,10 @@ package com.incretio.cozy_time_tracker_server.dao;
 
 import com.incretio.cozy_time_tracker_server.model.ex.Task;
 import com.incretio.cozy_time_tracker_server.model.pojo.TaskStatus;
+import com.incretio.cozy_time_tracker_server.model.vi.TaskVi;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -15,7 +17,7 @@ public class TasksDAO {
     {
         Task task = new Task(
             1,
-            1,
+            new ArrayList<>(Arrays.asList(1,2)),
             "LNDR-0001",
             "Остаток на складах шоурум выводить отдельно (ТЗ)",
             "",
@@ -129,11 +131,10 @@ public class TasksDAO {
     }
 
     public List<Task> getTasksList(int tagId) {
-        if (tagId < 0) {
+        if (tagId == 0) {
             return getTasksList();
         }
-        return tasksList.stream()
-                        .filter(task -> task.getTagId() == tagId)
+        return tasksList.stream().filter(task -> task.getTagsList().contains(tagId))
                         .collect(Collectors.toList());
     }
 
@@ -153,5 +154,11 @@ public class TasksDAO {
         Task addedTask = new Task(tasksList.size() + 1, tagId, number, name, "", 0, 0, 0, TaskStatus.STOPPED);
         tasksList.add(addedTask);
         return addedTask;
+    }
+
+    public Task update(int taskId, TaskVi taskVi) {
+        Task task = getTask(taskId).orElseThrow();
+        task.fillFrom(taskVi);
+        return task;
     }
 }

@@ -9,7 +9,7 @@ public class TagsDAO {
     private List<Tag> tagsList = new ArrayList<>();
 
     {
-        tagsList.add(new Tag(-1, "Все"));
+        tagsList.add(new Tag(0, "Все"));
         tagsList.add(new Tag(1, "Спринт"));
         tagsList.add(new Tag(2, "Lunda.ru"));
         tagsList.add(new Tag(3, "Lunda.se"));

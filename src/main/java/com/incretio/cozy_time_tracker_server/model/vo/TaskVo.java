@@ -3,8 +3,14 @@ package com.incretio.cozy_time_tracker_server.model.vo;
 import com.incretio.cozy_time_tracker_server.model.ex.Task;
 import com.incretio.cozy_time_tracker_server.utils.DateTimeUtil;
 
+import java.util.List;
+
 public class TaskVo extends BaseVo {
     private final Task task;
+
+    public TaskVo() {
+        task = new Task();
+    }
 
     public TaskVo(Task task) {
         this.task = task;
@@ -14,8 +20,8 @@ public class TaskVo extends BaseVo {
         return task.getId();
     }
 
-    public int getTagId() {
-        return task.getTagId();
+    public List<Integer> getTagsList() {
+        return task.getTagsList();
     }
 
     public String getTaskStatus() {
