@@ -9,7 +9,7 @@ import java.util.List;
 @NoArgsConstructor
 public class TaskPOJO extends BaseModel {
     @Getter int id;
-    @Getter List<Integer> tagsList;
+    @Getter @Setter List<Integer> tagsList;
     @Getter @Setter String number;
     @Getter @Setter String name;
     @Getter @Setter String description;

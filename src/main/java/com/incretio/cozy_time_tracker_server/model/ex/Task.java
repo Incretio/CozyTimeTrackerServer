@@ -65,6 +65,7 @@ public class Task extends TaskPOJO implements ToVoConvertable<TaskVo> {
     public void fillFrom(TaskVi taskVi) {
         setNumber(taskVi.getNumber());
         setName(taskVi.getName());
+        setTagsList(taskVi.getTagsList());
     }
 }
 

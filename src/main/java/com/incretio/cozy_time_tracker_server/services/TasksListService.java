@@ -35,7 +35,6 @@ public class TasksListService {
     @Path ("tags_list")
     @Produces (MediaType.APPLICATION_JSON)
     public List<TagVo> tagList(@Context final HttpServletRequest req, @Context final HttpServletResponse res) {
-        //        res.setHeader("Access-Control-Allow-Origin", "*");
         return convertVo.toVo(tagsDAO.getTagsList());
     }
 
@@ -44,7 +43,6 @@ public class TasksListService {
     @Produces (MediaType.APPLICATION_JSON)
     public List<TaskVo> tasksList(@Context final HttpServletRequest req, @Context final HttpServletResponse res,
                                   @PathParam ("tagId") int tagId) {
-        res.setHeader("Access-Control-Allow-Origin", "*");
         return convertVo.toVo(tasksDAO.getTasksList(tagId));
     }
 
@@ -53,7 +51,6 @@ public class TasksListService {
     @Produces (MediaType.APPLICATION_JSON)
     public List<TaskVo> taskToggle(@Context final HttpServletRequest req, @Context final HttpServletResponse res,
                                    @PathParam ("taskId") int taskId, @PathParam ("tagId") int tagId) {
-        res.setHeader("Access-Control-Allow-Origin", "*");
         tasksDAO.getTasksWithExclude(taskId)
                 .forEach(Task::stop);
         tasksDAO.getTask(taskId)
@@ -68,7 +65,6 @@ public class TasksListService {
     @Produces (MediaType.APPLICATION_JSON)
     public List<TaskVo> addNewTask(@Context final HttpServletRequest req, @Context final HttpServletResponse res,
                                    @FormParam ("taskName") String taskName, @FormParam ("tagId") int tagId) {
-        res.setHeader("Access-Control-Allow-Origin", "*");
         if (StringUtil.isNotBlank(taskName)) {
             TextSplitOnNumberAndName textSplitOnNumberAndName = new TextSplitOnNumberAndName(taskName);
             tasksDAO.addTask(textSplitOnNumberAndName.getNumber(), textSplitOnNumberAndName.getName(), tagId);
