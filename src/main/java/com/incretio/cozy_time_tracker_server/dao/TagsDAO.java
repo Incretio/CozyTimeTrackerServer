@@ -6,6 +6,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TagsDAO {
+    private String version;
+
+    public String getVersion() {
+        return version;
+    }
+
     private List<Tag> tagsList = new ArrayList<>();
 
     {
@@ -20,4 +26,7 @@ public class TagsDAO {
         return tagsList;
     }
 
+    public void setVersion(String version) {
+        this.version = version;
+    }
 }

@@ -7,23 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cfe9187c-9653-4dc8-aa7f-7e4253fd192d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/vi/TaskVi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/utils/Condition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/config/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/application-context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/conf.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/config/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/config/MyApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/dao/TagsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/dao/TagsDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/dao/TasksDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/dao/TasksDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/ex/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/ex/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/pojo/TaskPOJO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/pojo/TaskPOJO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/vo/TaskVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/vo/TaskVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/vo/helper/ConvertVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/vo/helper/ConvertVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/services/TasksListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/services/TasksListService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
-    <list id="442a5ad2-3eaa-4c02-ba2d-777498a4fe95" name="test" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,96 +27,6 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/config/MyApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#229#230#0" expanded="true" />
-                <element signature="e#293#294#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/dao/TagsDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#512#513#0" expanded="true" />
-                <element signature="e#543#544#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="68" column="57" selection-start-line="68" selection-start-column="57" selection-end-line="68" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/services/TasksListService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="74" column="24" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1189#1190#0" expanded="true" />
-                <element signature="e#1218#1219#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/dao/TasksDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/ex/Task.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#940#941#0" expanded="true" />
-                <element signature="e#989#990#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/pojo/TaskPOJO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -133,88 +38,8 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>maven-site-plugin</find>
-      <find>jetty-maven-plugin</find>
-      <find>org.glassfish.jersey.</find>
-      <find>java</find>
-      <find>new TaskVo\(.*\)</find>
-      <find>new TaskVo[(](.*)[)]</find>
-      <find>minSmallest</find>
-      <find>SECONDS_PER_DAY</find>
-      <find>ofEpochMilli</find>
-      <find>HH</find>
-      <find>hou</find>
-      <find>tags_li</find>
-      <find>hk</find>
-      <find>jacks</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>/1</replace>
-      <replace>\1</replace>
-      <replace>task)</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/ex/TagEx.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/ex/TaskEx.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/vo/helper/ConvertVoHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/ex/ToVoConvertable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/vo/ToVoConvertable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/vo/helper/ToVoConvertable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/pojo/Tag.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/pojo/Task.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/Tag.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/Task.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/BaseModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/vo/BaseVo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/vo/TagVo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/ex/Tag.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/pojo/TaskStatus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/exception/NoSuchTaskException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/vo/helper/ConvertVo.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/incretio/cozy_time_tracker_server/utils/DateTimeUtilTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/incretio/cozy_time_tracker_server/utils/MillisecondsUtilTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/incretio/cozy_time_tracker_server/utils/MillisecondsUtil/MillisecondsUtilTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/incretio/cozy_time_tracker_server/utils/DateTimeUtil_msToTimeString_Test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/incretio/cozy_time_tracker_server/utils/DateTimeUtil_MsToTimeString_Test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/incretio/cozy_time_tracker_server/utils/MillisecondsUtil/MillisecondsUtil_MsToHours_Test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/incretio/cozy_time_tracker_server/utils/millisecondsUtil/MillisecondsUtil_MsToHours_Test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/incretio/cozy_time_tracker_server/utils/millisecondsUtil/MillisecondsUtil_MsToMinutes_Test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/incretio/cozy_time_tracker_server/utils/millisecondsUtil/MillisecondsUtil_MsToSeconds_Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/utils/MillisecondsUtil.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/incretio/cozy_time_tracker_server/utils/millisecondsUtil/MillisecondsUtil_MsToRemainderOfMinutes_Test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/incretio/cozy_time_tracker_server/utils/millisecondsUtil/MillisecondsUtil_MsToRemainderOfSeconds_Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/utils/DateTimeUtil.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/incretio/cozy_time_tracker_server/utils/dateTimeUtil/DateTimeUtil_MsToTimeString_Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/helpers/TextSplitOnNumberAndName.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/utils/StringUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/services/TestService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/services/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/pojo/TagPOJO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/config/P.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/config/MyApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/config/CorsFeature.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/utils/F.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/vi/TaskIn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/vi/TaskVi.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/services/TasksListService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/pojo/TaskPOJO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/vo/TaskVo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/dao/TagsDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/ex/Task.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/dao/TasksDAO.java" />
-      </list>
-    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -237,146 +62,13 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="cozy-time-tracker-server Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="cozy-time-tracker-server Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="cozy-time-tracker-server Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="cozy-time-tracker-server Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="war" type="36feed69:MavenProjectsStructure$PluginNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
+  <component name="ProjectId" id="1PshGcIomjdIsNdeCW3gfKLNhvS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="cozy-time-tracker-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cozy-time-tracker-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cozy-time-tracker-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cozy-time-tracker-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cozy-time-tracker-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cozy-time-tracker-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cozy-time-tracker-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cozy-time-tracker-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cozy-time-tracker-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cozy-time-tracker-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cozy_time_tracker_server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cozy-time-tracker-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cozy-time-tracker-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cozy_time_tracker_server" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cozy-time-tracker-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cozy-time-tracker-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cozy_time_tracker_server" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cozy-time-tracker-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cozy-time-tracker-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cozy_time_tracker_server" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="vo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cozy-time-tracker-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cozy-time-tracker-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cozy_time_tracker_server" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cozy-time-tracker-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cozy-time-tracker-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cozy_time_tracker_server" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cozy-time-tracker-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cozy-time-tracker-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cozy-time-tracker-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cozy-time-tracker-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -409,6 +101,9 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.incretio.cozy_time_tracker_server.utils" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\incre\IdeaProjects\cozy-time-tracker-server\src\main\webapp\WEB-INF\config" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.incretio.cozy_time_tracker_server.services" />
       <recent name="com.incretio.cozy_time_tracker_server.utils.millisecondsUtil" />
@@ -416,6 +111,9 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\incre\IdeaProjects\cozy-time-tracker-server\src\main\java\com\incretio\cozy_time_tracker_server\model\pojo" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.incretio.cozy_time_tracker_server.services" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -491,7 +189,6 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="cfe9187c-9653-4dc8-aa7f-7e4253fd192d" name="Default Changelist" comment="" />
-      <changelist id="442a5ad2-3eaa-4c02-ba2d-777498a4fe95" name="test" comment="" />
       <created>1560703499297</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -502,6 +199,8 @@
       <workItem from="1560707157748" duration="19256000" />
       <workItem from="1563455714666" duration="3781000" />
       <workItem from="1563566504262" duration="44976000" />
+      <workItem from="1566411127054" duration="24000" />
+      <workItem from="1566668618562" duration="16724000" />
     </task>
     <task id="LOCAL-00001" summary="Настроен проект и ресты.">
       <created>1560884506783</created>
@@ -517,7 +216,21 @@
       <option name="project" value="LOCAL" />
       <updated>1564244145722</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Big commit">
+      <created>1564599889271</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1564599889271</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Реализовал возможность обновления тэгов заказа.">
+      <created>1564605057702</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1564605057702</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -552,54 +265,6 @@
       <configuration name="All in cozy-time-tracker-server" configurationId="JUnit" />
     </history-entry>
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89453000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.3219178" visible="true" weight="0.18869936" />
-      <window_info id="Structure" order="1" sideWeight="0.6792453" side_tool="true" weight="0.24253732" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="DB Browser" order="4" weight="0.32995737" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="UI Designer" order="6" />
-      <window_info id="Project Explorer" order="7" weight="0.32995737" />
-      <window_info id="Favorites" order="8" side_tool="true" />
-      <window_info id="Job Explorer" order="9" weight="0.32995737" />
-      <window_info id="Web" order="10" sideWeight="0.33895448" side_tool="true" weight="0.26172706" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.18444444" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7793177" visible="true" weight="0.28444445" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.34" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Console" order="7" />
-      <window_info anchor="bottom" id="DB Execution Console" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.27946126" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.22068231" side_tool="true" weight="0.43" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3122222" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32555556" />
-      <window_info anchor="bottom" id="Messages" order="15" />
-      <window_info anchor="bottom" id="Application Servers" order="16" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Maven" order="1" weight="0.1945629" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.24945295" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" weight="0.32995737" />
-      <window_info anchor="right" id="CDI" order="10" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -609,12 +274,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
@@ -626,14 +285,7 @@
                   </entry>
                 </map>
               </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
@@ -666,7 +318,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Настроен проект и ресты." />
     <MESSAGE value="Big commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Big commit" />
+    <MESSAGE value="Реализовал возможность обновления тэгов задачи." />
+    <option name="LAST_COMMIT_MESSAGE" value="Реализовал возможность обновления тэгов задачи." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -676,164 +329,140 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22.jar!/org/apache/catalina/filters/CorsFilter.class</url>
           <line>81</line>
-          <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22.jar!/org/apache/catalina/filters/CorsFilter.class</url>
           <line>119</line>
-          <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22.jar!/org/apache/catalina/filters/CorsFilter.class</url>
           <line>137</line>
-          <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22.jar!/org/apache/catalina/filters/CorsFilter.class</url>
           <line>186</line>
-          <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22.jar!/org/apache/catalina/filters/CorsFilter.class</url>
           <line>191</line>
-          <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22.jar!/org/apache/catalina/filters/CorsFilter.class</url>
           <line>213</line>
-          <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22.jar!/org/apache/catalina/filters/CorsFilter.class</url>
           <line>253</line>
-          <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22.jar!/org/apache/catalina/filters/CorsFilter.class</url>
           <line>284</line>
-          <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22-sources.jar!/org/apache/catalina/filters/CorsFilter.java</url>
           <line>549</line>
-          <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22-sources.jar!/org/apache/catalina/filters/CorsFilter.java</url>
           <line>581</line>
-          <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22-sources.jar!/org/apache/catalina/filters/CorsFilter.java</url>
           <line>639</line>
-          <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22-sources.jar!/org/apache/catalina/filters/CorsFilter.java</url>
           <line>671</line>
-          <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22-sources.jar!/org/apache/catalina/filters/CorsFilter.java</url>
           <line>692</line>
-          <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22-sources.jar!/org/apache/catalina/filters/CorsFilter.java</url>
           <line>141</line>
-          <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22-sources.jar!/org/apache/catalina/filters/CorsFilter.java</url>
           <line>182</line>
-          <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22-sources.jar!/org/apache/catalina/filters/CorsFilter.java</url>
           <line>232</line>
-          <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22-sources.jar!/org/apache/catalina/filters/CorsFilter.java</url>
           <line>275</line>
-          <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.28/jersey-server-2.28.jar!/org/glassfish/jersey/server/wadl/processor/WadlModelProcessor.class</url>
           <line>79</line>
-          <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.28/jersey-server-2.28.jar!/org/glassfish/jersey/server/wadl/processor/WadlModelProcessor.class</url>
           <line>64</line>
-          <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/bundles/jaxrs-ri/2.28/jaxrs-ri-2.28.jar!/org/glassfish/jersey/server/wadl/processor/WadlModelProcessor.class</url>
-          <line>45</line>
-          <properties />
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/bundles/jaxrs-ri/2.28/jaxrs-ri-2.28.jar!/org/glassfish/jersey/server/wadl/processor/WadlModelProcessor.class</url>
-          <line>49</line>
-          <properties />
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/bundles/jaxrs-ri/2.28/jaxrs-ri-2.28.jar!/org/glassfish/jersey/server/wadl/processor/WadlModelProcessor.class</url>
           <line>64</line>
-          <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/bundles/jaxrs-ri/2.28/jaxrs-ri-2.28.jar!/org/glassfish/jersey/server/wadl/processor/WadlModelProcessor.class</url>
           <line>79</line>
-          <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.28/jersey-server-2.28-sources.jar!/org/glassfish/jersey/server/wadl/processor/WadlModelProcessor.java</url>
           <line>130</line>
-          <properties />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.28/jersey-server-2.28-sources.jar!/org/glassfish/jersey/server/wadl/processor/WadlModelProcessor.java</url>
           <line>64</line>
-          <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/bundles/jaxrs-ri/2.28/jaxrs-ri-2.28-sources.jar!/org/glassfish/jersey/server/wadl/processor/WadlModelProcessor.java</url>
           <line>114</line>
-          <properties />
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/bundles/jaxrs-ri/2.28/jaxrs-ri-2.28-sources.jar!/org/glassfish/jersey/server/wadl/processor/WadlModelProcessor.java</url>
           <line>130</line>
-          <properties />
           <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.9.RELEASE/spring-core-5.1.9.RELEASE.jar!/org/springframework/core/io/support/PropertiesLoaderUtils.class</url>
+          <line>30</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/org/jboss/weld/weld-core-impl/3.1.2.Final/weld-core-impl-3.1.2.Final.jar!/org/jboss/weld/manager/BeanManagerImpl.class</url>
+          <line>214</line>
+          <properties class="org.jboss.weld.manager.BeanManagerImpl" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -841,538 +470,5 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>resourceMethod</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>convertVo.toVo(tagsDAO.getTagsList())</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/incretio/cozy_time_tracker_server/utils/millisecondsUtil/MillisecondsUtil_MsToSeconds_Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="37" column="51" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/incretio/cozy_time_tracker_server/utils/millisecondsUtil/MillisecondsUtil_MsToRemainderOfSeconds_Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/utils/MillisecondsUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-          <folding>
-            <element signature="e#128#129#0" expanded="true" />
-            <element signature="e#170#171#0" expanded="true" />
-            <element signature="e#219#220#0" expanded="true" />
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/FunctionalInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="68" column="18" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/function/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/jakarta/ws/rs/jakarta.ws.rs-api/2.1.5/jakarta.ws.rs-api-2.1.5.jar!/javax/ws/rs/ApplicationPath.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="e#0#464#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/jakarta/ws/rs/jakarta.ws.rs-api/2.1.5/jakarta.ws.rs-api-2.1.5.jar!/javax/ws/rs/core/MediaType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="34" column="53" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/incretio/cozy_time_tracker_server/utils/dateTimeUtil/DateTimeUtil_MsToTimeString_Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/helpers/TextSplitOnNumberAndName.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/jdk.internal.opt/jdk/internal/joptsimple/internal/Strings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="96" column="45" lean-forward="true" selection-start-line="96" selection-start-column="45" selection-end-line="96" selection-end-column="45" />
-          <folding>
-            <element signature="e#2600#2601#0" expanded="true" />
-            <element signature="e#2657#2658#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="2753" column="19" selection-start-line="2753" selection-start-column="19" selection-end-line="2753" selection-end-column="19" />
-          <folding>
-            <element signature="e#24832#24833#0" expanded="true" />
-            <element signature="e#24872#24873#0" expanded="true" />
-            <element signature="e#110077#110078#0" expanded="true" />
-            <element signature="e#110134#110135#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/utils/DateTimeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/utils/StringUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#127#128#0" expanded="true" />
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="e#239#240#0" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/vo/TagVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/services/Rest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/pojo/TagPOJO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/services/RestService.java" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/jakarta/ws/rs/jakarta.ws.rs-api/2.1.5/jakarta.ws.rs-api-2.1.5.jar!/javax/ws/rs/core/Feature.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/vo/helper/ConvertVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#288#289#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.28/jersey-server-2.28.jar!/org/glassfish/jersey/server/model/internal/JavaResourceMethodDispatcherProvider.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.28/jersey-server-2.28.jar!/org/glassfish/jersey/server/model/internal/AbstractJavaResourceMethodDispatcher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="114" selection-start-line="114" selection-end-line="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.28/jersey-server-2.28.jar!/org/glassfish/jersey/server/model/internal/ResourceMethodInvocationHandlerFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22.jar!/org/apache/catalina/filters/CorsFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="279" selection-start-line="279" selection-end-line="279" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/bundles/jaxrs-ri/2.28/jaxrs-ri-2.28.jar!/org/glassfish/jersey/server/wadl/processor/WadlModelProcessor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-218">
-          <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
-          <folding>
-            <element signature="class#OptionsHandler#0;class#WadlModelProcessor#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.28/jersey-server-2.28.jar!/org/glassfish/jersey/server/wadl/processor/WadlModelProcessor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="87" column="48" selection-start-line="87" selection-start-column="48" selection-end-line="87" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/bundles/jaxrs-ri/2.28/jaxrs-ri-2.28-sources.jar!/org/glassfish/jersey/server/wadl/processor/WadlModelProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-523">
-          <caret line="80" column="25" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
-          <folding>
-            <element signature="class#OptionsHandler#0;class#WadlModelProcessor#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22-sources.jar!/org/apache/catalina/filters/CorsFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="300" column="41" selection-start-line="300" selection-start-column="41" selection-end-line="300" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/hk2/hk2-utils/2.5.0/hk2-utils-2.5.0.jar!/org/glassfish/hk2/utilities/reflection/ReflectionHelper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="989" selection-start-line="989" selection-end-line="989" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/hk2/hk2-locator/2.5.0/hk2-locator-2.5.0.jar!/org/jvnet/hk2/internal/ClazzCreator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="298" selection-start-line="298" selection-end-line="298" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/hk2/hk2-locator/2.5.0/hk2-locator-2.5.0.jar!/org/jvnet/hk2/internal/SystemDescriptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="282" selection-start-line="282" selection-end-line="282" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/inject/jersey-hk2/2.28/jersey-hk2-2.28.jar!/org/glassfish/jersey/inject/hk2/RequestContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="37" column="46" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
-          <folding>
-            <element signature="e#1440#1511#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/hk2/hk2-locator/2.5.0/hk2-locator-2.5.0.jar!/org/jvnet/hk2/internal/Utilities.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="1439" selection-start-line="1439" selection-end-line="1439" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/hk2/hk2-locator/2.5.0/hk2-locator-2.5.0.jar!/org/jvnet/hk2/internal/ServiceLocatorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="618" selection-start-line="618" selection-end-line="618" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.28/jersey-server-2.28-sources.jar!/org/glassfish/jersey/server/model/internal/AbstractJavaResourceMethodDispatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.28/jersey-server-2.28-sources.jar!/org/glassfish/jersey/server/model/internal/ResourceMethodInvocationHandlerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="51" column="87" selection-start-line="51" selection-start-column="87" selection-end-line="51" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/utils/Condition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-          <folding>
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#290#291#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/vi/TaskVi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.28/jersey-server-2.28-sources.jar!/org/glassfish/jersey/server/wadl/processor/WadlModelProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="94" selection-start-line="94" selection-end-line="94" />
-          <folding>
-            <element signature="class#OptionsHandler#0;class#WadlModelProcessor#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/pojo/TaskPOJO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/config/CorsFeature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/vo/TaskVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="e#1228#1229#0" expanded="true" />
-            <element signature="e#1267#1268#0" expanded="true" />
-            <element signature="e#1298#1299#0" expanded="true" />
-            <element signature="e#1335#1336#0" expanded="true" />
-            <element signature="e#1373#1374#0" expanded="true" />
-            <element signature="e#1417#1418#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/ex/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#940#941#0" expanded="true" />
-            <element signature="e#989#990#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="68" column="57" selection-start-line="68" selection-start-column="57" selection-end-line="68" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/config/MyApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/dao/TagsDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/services/TasksListService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="74" column="24" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1189#1190#0" expanded="true" />
-            <element signature="e#1218#1219#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/dao/TasksDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>cozy-time-tracker-server:war exploded</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Web</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>cozy-time-tracker-server</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

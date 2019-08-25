@@ -10,6 +10,8 @@ import com.incretio.cozy_time_tracker_server.model.vo.TagVo;
 import com.incretio.cozy_time_tracker_server.model.vo.TaskVo;
 import com.incretio.cozy_time_tracker_server.model.vo.helper.ConvertVo;
 import com.incretio.cozy_time_tracker_server.utils.StringUtil;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -19,15 +21,16 @@ import javax.ws.rs.core.MediaType;
 import java.util.List;
 
 @Path ("v.1")
-public class TasksListService {
-    private static final TagsDAO tagsDAO = new TagsDAO();
-    private static final TasksDAO tasksDAO = new TasksDAO();
-    private static final ConvertVo convertVo = new ConvertVo();
+public class TasksListService extends SpringBeanAutowiringSupport {
+    @Autowired private TagsDAO tagsDAO;
+    @Autowired private TasksDAO tasksDAO;
+    @Autowired private ConvertVo convertVo;
 
     @GET
     @Path ("test")
     @Produces (MediaType.APPLICATION_JSON)
     public String getTasksList() {
+        System.out.println(tagsDAO.getVersion());
         return "O.K.";
     }
 
@@ -51,11 +54,8 @@ public class TasksListService {
     @Produces (MediaType.APPLICATION_JSON)
     public List<TaskVo> taskToggle(@Context final HttpServletRequest req, @Context final HttpServletResponse res,
                                    @PathParam ("taskId") int taskId, @PathParam ("tagId") int tagId) {
-        tasksDAO.getTasksWithExclude(taskId)
-                .forEach(Task::stop);
-        tasksDAO.getTask(taskId)
-                .orElseThrow(NoSuchTaskException::new)
-                .toggle();
+        tasksDAO.getTasksWithExclude(taskId).forEach(Task::stop);
+        tasksDAO.getTask(taskId).orElseThrow(NoSuchTaskException::new).toggle();
         return convertVo.toVo(tasksDAO.getTasksList(tagId));
     }
 

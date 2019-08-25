@@ -134,20 +134,15 @@ public class TasksDAO {
         if (tagId == 0) {
             return getTasksList();
         }
-        return tasksList.stream().filter(task -> task.getTagsList().contains(tagId))
-                        .collect(Collectors.toList());
+        return tasksList.stream().filter(task -> task.getTagsList().contains(tagId)).collect(Collectors.toList());
     }
 
     public Optional<Task> getTask(int taskId) {
-        return tasksList.stream()
-                        .filter(task -> task.getId() == taskId)
-                        .findFirst();
+        return tasksList.stream().filter(task -> task.getId() == taskId).findFirst();
     }
 
     public List<Task> getTasksWithExclude(int taskId) {
-        return tasksList.stream()
-                        .filter(task -> task.getId() != taskId)
-                        .collect(Collectors.toList());
+        return tasksList.stream().filter(task -> task.getId() != taskId).collect(Collectors.toList());
     }
 
     public Task addTask(String number, String name, int tagId) {
