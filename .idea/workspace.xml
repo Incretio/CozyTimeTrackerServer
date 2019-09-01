@@ -7,17 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cfe9187c-9653-4dc8-aa7f-7e4253fd192d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/config/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/application-context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/conf.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/dao/TagsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/dao/TagsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/dao/TasksDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/dao/TasksDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/vo/helper/ConvertVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/vo/helper/ConvertVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/services/TasksListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/services/TasksListService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +30,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -62,11 +53,6 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
-  </component>
   <component name="ProjectId" id="1PshGcIomjdIsNdeCW3gfKLNhvS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
@@ -76,7 +62,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/utils" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/model/pojo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/META-INF" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -92,6 +78,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.incretio.cozy_time_tracker_server.services" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.incretio.cozy_time_tracker_server.utils" />
     </key>
@@ -101,19 +90,18 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.incretio.cozy_time_tracker_server.utils" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\incre\IdeaProjects\cozy-time-tracker-server\src\main\webapp\WEB-INF\config" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\incre\IdeaProjects\cozy-time-tracker-server\src\main\webapp\META-INF" />
+      <recent name="C:\Users\incre\IdeaProjects\cozy-time-tracker-server\src\main\java\com\incretio\cozy_time_tracker_server\model\pojo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.incretio.cozy_time_tracker_server.config" />
       <recent name="com.incretio.cozy_time_tracker_server.services" />
       <recent name="com.incretio.cozy_time_tracker_server.utils.millisecondsUtil" />
       <recent name="com.incretio.cozy_time_tracker_server.model.ex" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\incre\IdeaProjects\cozy-time-tracker-server\src\main\java\com\incretio\cozy_time_tracker_server\model\pojo" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.incretio.cozy_time_tracker_server.services" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\incre\IdeaProjects\cozy-time-tracker-server\src\main\webapp\WEB-INF\config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -200,7 +188,10 @@
       <workItem from="1563455714666" duration="3781000" />
       <workItem from="1563566504262" duration="44976000" />
       <workItem from="1566411127054" duration="24000" />
-      <workItem from="1566668618562" duration="16724000" />
+      <workItem from="1566668618562" duration="17549000" />
+      <workItem from="1567224228815" duration="631000" />
+      <workItem from="1567249644598" duration="2395000" />
+      <workItem from="1567257064643" duration="25603000" />
     </task>
     <task id="LOCAL-00001" summary="Настроен проект и ресты.">
       <created>1560884506783</created>
@@ -230,7 +221,63 @@
       <option name="project" value="LOCAL" />
       <updated>1564605057702</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Подключен spring и настроен DI">
+      <created>1566734067064</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1566734067064</updated>
+    </task>
+    <task id="LOCAL-00006" summary="temp">
+      <created>1567276263381</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1567276263381</updated>
+    </task>
+    <task id="LOCAL-00007" summary="temp1">
+      <created>1567276343006</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1567276343006</updated>
+    </task>
+    <task id="LOCAL-00008" summary="temp">
+      <created>1567276391285</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1567276391285</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Переключился на использование jersey DI">
+      <created>1567280509439</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1567280509439</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Переключился на использование jersey DI">
+      <created>1567282876932</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1567282876932</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Переключился на использование jersey DI">
+      <created>1567283275255</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1567283275255</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Переключился на использование jersey DI">
+      <created>1567321909147</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1567321909147</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -268,9 +315,44 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/incre/IdeaProjects/cozy-time-tracker-server/src/main/webapp" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -290,6 +372,11 @@
           </value>
         </entry>
       </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
     </option>
     <option name="RECENT_FILTERS">
       <map>
@@ -319,153 +406,13 @@
     <MESSAGE value="Настроен проект и ресты." />
     <MESSAGE value="Big commit" />
     <MESSAGE value="Реализовал возможность обновления тэгов задачи." />
-    <option name="LAST_COMMIT_MESSAGE" value="Реализовал возможность обновления тэгов задачи." />
+    <MESSAGE value="Подключен spring и настроен DI" />
+    <MESSAGE value="temp1" />
+    <MESSAGE value="temp" />
+    <MESSAGE value="Переключился на использование jersey DI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Переключился на использование jersey DI" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22.jar!/org/apache/catalina/filters/CorsFilter.class</url>
-          <line>81</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22.jar!/org/apache/catalina/filters/CorsFilter.class</url>
-          <line>119</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22.jar!/org/apache/catalina/filters/CorsFilter.class</url>
-          <line>137</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22.jar!/org/apache/catalina/filters/CorsFilter.class</url>
-          <line>186</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22.jar!/org/apache/catalina/filters/CorsFilter.class</url>
-          <line>191</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22.jar!/org/apache/catalina/filters/CorsFilter.class</url>
-          <line>213</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22.jar!/org/apache/catalina/filters/CorsFilter.class</url>
-          <line>253</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22.jar!/org/apache/catalina/filters/CorsFilter.class</url>
-          <line>284</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22-sources.jar!/org/apache/catalina/filters/CorsFilter.java</url>
-          <line>549</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22-sources.jar!/org/apache/catalina/filters/CorsFilter.java</url>
-          <line>581</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22-sources.jar!/org/apache/catalina/filters/CorsFilter.java</url>
-          <line>639</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22-sources.jar!/org/apache/catalina/filters/CorsFilter.java</url>
-          <line>671</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22-sources.jar!/org/apache/catalina/filters/CorsFilter.java</url>
-          <line>692</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22-sources.jar!/org/apache/catalina/filters/CorsFilter.java</url>
-          <line>141</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22-sources.jar!/org/apache/catalina/filters/CorsFilter.java</url>
-          <line>182</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22-sources.jar!/org/apache/catalina/filters/CorsFilter.java</url>
-          <line>232</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-catalina/9.0.22/tomcat-catalina-9.0.22-sources.jar!/org/apache/catalina/filters/CorsFilter.java</url>
-          <line>275</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.28/jersey-server-2.28.jar!/org/glassfish/jersey/server/wadl/processor/WadlModelProcessor.class</url>
-          <line>79</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.28/jersey-server-2.28.jar!/org/glassfish/jersey/server/wadl/processor/WadlModelProcessor.class</url>
-          <line>64</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/bundles/jaxrs-ri/2.28/jaxrs-ri-2.28.jar!/org/glassfish/jersey/server/wadl/processor/WadlModelProcessor.class</url>
-          <line>64</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/bundles/jaxrs-ri/2.28/jaxrs-ri-2.28.jar!/org/glassfish/jersey/server/wadl/processor/WadlModelProcessor.class</url>
-          <line>79</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.28/jersey-server-2.28-sources.jar!/org/glassfish/jersey/server/wadl/processor/WadlModelProcessor.java</url>
-          <line>130</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.28/jersey-server-2.28-sources.jar!/org/glassfish/jersey/server/wadl/processor/WadlModelProcessor.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/bundles/jaxrs-ri/2.28/jaxrs-ri-2.28-sources.jar!/org/glassfish/jersey/server/wadl/processor/WadlModelProcessor.java</url>
-          <line>114</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/bundles/jaxrs-ri/2.28/jaxrs-ri-2.28-sources.jar!/org/glassfish/jersey/server/wadl/processor/WadlModelProcessor.java</url>
-          <line>130</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.9.RELEASE/spring-core-5.1.9.RELEASE.jar!/org/springframework/core/io/support/PropertiesLoaderUtils.class</url>
-          <line>30</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>jar://$MAVEN_REPOSITORY$/org/jboss/weld/weld-core-impl/3.1.2.Final/weld-core-impl-3.1.2.Final.jar!/org/jboss/weld/manager/BeanManagerImpl.class</url>
-          <line>214</line>
-          <properties class="org.jboss.weld.manager.BeanManagerImpl" method="&lt;init&gt;">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

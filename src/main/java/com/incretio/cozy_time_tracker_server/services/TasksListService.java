@@ -1,5 +1,6 @@
 package com.incretio.cozy_time_tracker_server.services;
 
+import com.incretio.cozy_time_tracker_server.config.ApplicationProperties;
 import com.incretio.cozy_time_tracker_server.dao.TagsDAO;
 import com.incretio.cozy_time_tracker_server.dao.TasksDAO;
 import com.incretio.cozy_time_tracker_server.exception.NoSuchTaskException;
@@ -10,9 +11,8 @@ import com.incretio.cozy_time_tracker_server.model.vo.TagVo;
 import com.incretio.cozy_time_tracker_server.model.vo.TaskVo;
 import com.incretio.cozy_time_tracker_server.model.vo.helper.ConvertVo;
 import com.incretio.cozy_time_tracker_server.utils.StringUtil;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 
+import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.*;
@@ -21,16 +21,23 @@ import javax.ws.rs.core.MediaType;
 import java.util.List;
 
 @Path ("v.1")
-public class TasksListService extends SpringBeanAutowiringSupport {
-    @Autowired private TagsDAO tagsDAO;
-    @Autowired private TasksDAO tasksDAO;
-    @Autowired private ConvertVo convertVo;
+public class TasksListService {
+    @Inject
+    private TagsDAO tagsDAO;
+    @Inject
+    private TasksDAO tasksDAO;
+    @Inject
+    private ConvertVo convertVo;
+    @Inject
+    ApplicationProperties applicationProperties;
 
     @GET
     @Path ("test")
     @Produces (MediaType.APPLICATION_JSON)
     public String getTasksList() {
-        System.out.println(tagsDAO.getVersion());
+        System.out.println(applicationProperties.getProperty("test"));
+        System.out.println(applicationProperties.getProperty("test1"));
+        System.out.println(tagsDAO.getSiteHome());
         return "O.K.";
     }
 

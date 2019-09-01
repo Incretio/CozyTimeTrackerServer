@@ -1,15 +1,22 @@
 package com.incretio.cozy_time_tracker_server.dao;
 
+import com.incretio.cozy_time_tracker_server.config.ApplicationProperties;
 import com.incretio.cozy_time_tracker_server.model.ex.Tag;
 
+import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.List;
 
 public class TagsDAO {
-    private String version;
+    private String siteHome;
 
-    public String getVersion() {
-        return version;
+    public String getSiteHome() {
+        return siteHome;
+    }
+
+    @Inject
+    public TagsDAO(ApplicationProperties applicationProperties) {
+        this.siteHome = applicationProperties.getProperty("site.home");
     }
 
     private List<Tag> tagsList = new ArrayList<>();
@@ -26,7 +33,4 @@ public class TagsDAO {
         return tagsList;
     }
 
-    public void setVersion(String version) {
-        this.version = version;
-    }
 }
