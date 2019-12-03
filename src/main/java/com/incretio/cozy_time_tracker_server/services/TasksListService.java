@@ -11,6 +11,7 @@ import com.incretio.cozy_time_tracker_server.model.vo.TagVo;
 import com.incretio.cozy_time_tracker_server.model.vo.TaskVo;
 import com.incretio.cozy_time_tracker_server.model.vo.helper.ConvertVo;
 import com.incretio.cozy_time_tracker_server.utils.StringUtil;
+import org.slf4j.Logger;
 
 import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
@@ -20,8 +21,12 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 
+import static org.slf4j.LoggerFactory.getLogger;
+
 @Path ("v.1")
 public class TasksListService {
+    private static final Logger log = getLogger(TasksListService.class);
+
     @Inject
     private TagsDAO tagsDAO;
     @Inject
@@ -35,6 +40,7 @@ public class TasksListService {
     @Path ("test")
     @Produces (MediaType.APPLICATION_JSON)
     public String getTasksList() {
+        log.info("test");
         System.out.println(applicationProperties.getProperty("test"));
         System.out.println(applicationProperties.getProperty("test1"));
         System.out.println(tagsDAO.getSiteHome());
