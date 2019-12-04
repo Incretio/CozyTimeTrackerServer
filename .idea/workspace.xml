@@ -7,7 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cfe9187c-9653-4dc8-aa7f-7e4253fd192d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/repository/TagsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/repository/TasksRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/config/MyBinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/config/MyBinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/dao/TagsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/repository/memory/MemoryTagsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/dao/TasksDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/repository/memory/MemoryTasksRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/services/TasksListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/service/TasksListService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-app.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-app.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +69,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/utils" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/META-INF" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/incretio/cozy_time_tracker_server/repository" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -78,9 +85,6 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.incretio.cozy_time_tracker_server.services" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.incretio.cozy_time_tracker_server.utils" />
     </key>
@@ -90,7 +94,11 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.incretio.cozy_time_tracker_server.utils" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\incre\IdeaProjects\cozy-time-tracker-server\src\main\webapp\WEB-INF\config" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\incre\IdeaProjects\cozy-time-tracker-server\src\main\java\com\incretio\cozy_time_tracker_server\repository\" />
       <recent name="C:\Users\incre\IdeaProjects\cozy-time-tracker-server\src\main\webapp\META-INF" />
       <recent name="C:\Users\incre\IdeaProjects\cozy-time-tracker-server\src\main\java\com\incretio\cozy_time_tracker_server\model\pojo" />
     </key>
@@ -100,8 +108,8 @@
       <recent name="com.incretio.cozy_time_tracker_server.utils.millisecondsUtil" />
       <recent name="com.incretio.cozy_time_tracker_server.model.ex" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\incre\IdeaProjects\cozy-time-tracker-server\src\main\webapp\WEB-INF\config" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.incretio.cozy_time_tracker_server.services" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -191,7 +199,8 @@
       <workItem from="1566668618562" duration="17549000" />
       <workItem from="1567224228815" duration="631000" />
       <workItem from="1567249644598" duration="2395000" />
-      <workItem from="1567257064643" duration="25603000" />
+      <workItem from="1567257064643" duration="29772000" />
+      <workItem from="1575394463032" duration="7782000" />
     </task>
     <task id="LOCAL-00001" summary="Настроен проект и ресты.">
       <created>1560884506783</created>
@@ -277,7 +286,35 @@
       <option name="project" value="LOCAL" />
       <updated>1567321909147</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Переключился на использование jersey DI">
+      <created>1567322520421</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1567322520421</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add apache config">
+      <created>1575395961882</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1575395961882</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add logback logging">
+      <created>1575397849892</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1575397849892</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add spring to project">
+      <created>1575401165639</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1575401165639</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -400,7 +437,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Настроен проект и ресты." />
@@ -410,9 +447,10 @@
     <MESSAGE value="temp1" />
     <MESSAGE value="temp" />
     <MESSAGE value="Переключился на использование jersey DI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Переключился на использование jersey DI" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="add apache config" />
+    <MESSAGE value="add logback logging" />
+    <MESSAGE value="add spring to project" />
+    <option name="LAST_COMMIT_MESSAGE" value="add spring to project" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

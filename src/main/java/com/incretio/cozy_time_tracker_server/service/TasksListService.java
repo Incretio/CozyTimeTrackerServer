@@ -1,8 +1,7 @@
-package com.incretio.cozy_time_tracker_server.services;
+package com.incretio.cozy_time_tracker_server.service;
 
-import com.incretio.cozy_time_tracker_server.config.ApplicationProperties;
-import com.incretio.cozy_time_tracker_server.dao.TagsDAO;
-import com.incretio.cozy_time_tracker_server.dao.TasksDAO;
+import com.incretio.cozy_time_tracker_server.repository.TagsRepository;
+import com.incretio.cozy_time_tracker_server.repository.TasksRepository;
 import com.incretio.cozy_time_tracker_server.exception.NoSuchTaskException;
 import com.incretio.cozy_time_tracker_server.helpers.TextSplitOnNumberAndName;
 import com.incretio.cozy_time_tracker_server.model.ex.Task;
@@ -28,30 +27,25 @@ public class TasksListService {
     private static final Logger log = getLogger(TasksListService.class);
 
     @Inject
-    private TagsDAO tagsDAO;
+    private TagsRepository tagsRepository;
     @Inject
-    private TasksDAO tasksDAO;
+    private TasksRepository tasksRepository;
     @Inject
     private ConvertVo convertVo;
-    @Inject
-    ApplicationProperties applicationProperties;
 
     @GET
     @Path ("test")
     @Produces (MediaType.APPLICATION_JSON)
     public String getTasksList() {
-        log.info("test");
-        System.out.println(applicationProperties.getProperty("test"));
-        System.out.println(applicationProperties.getProperty("test1"));
-        System.out.println(tagsDAO.getSiteHome());
-        return "O.K.";
+        log.info("test O.K.");
+        return "test O.K.";
     }
 
     @GET
     @Path ("tags_list")
     @Produces (MediaType.APPLICATION_JSON)
     public List<TagVo> tagList(@Context final HttpServletRequest req, @Context final HttpServletResponse res) {
-        return convertVo.toVo(tagsDAO.getTagsList());
+        return convertVo.toVo(tagsRepository.getAll());
     }
 
     @GET
@@ -59,7 +53,7 @@ public class TasksListService {
     @Produces (MediaType.APPLICATION_JSON)
     public List<TaskVo> tasksList(@Context final HttpServletRequest req, @Context final HttpServletResponse res,
                                   @PathParam ("tagId") int tagId) {
-        return convertVo.toVo(tasksDAO.getTasksList(tagId));
+        return convertVo.toVo(tasksRepository.getByTagId(tagId));
     }
 
     @POST
@@ -67,9 +61,9 @@ public class TasksListService {
     @Produces (MediaType.APPLICATION_JSON)
     public List<TaskVo> taskToggle(@Context final HttpServletRequest req, @Context final HttpServletResponse res,
                                    @PathParam ("taskId") int taskId, @PathParam ("tagId") int tagId) {
-        tasksDAO.getTasksWithExclude(taskId).forEach(Task::stop);
-        tasksDAO.getTask(taskId).orElseThrow(NoSuchTaskException::new).toggle();
-        return convertVo.toVo(tasksDAO.getTasksList(tagId));
+        tasksRepository.getWithExclude(taskId).forEach(Task::stop);
+        tasksRepository.getById(taskId).orElseThrow(NoSuchTaskException::new).toggle();
+        return convertVo.toVo(tasksRepository.getByTagId(tagId));
     }
 
     @POST
@@ -80,9 +74,9 @@ public class TasksListService {
                                    @FormParam ("taskName") String taskName, @FormParam ("tagId") int tagId) {
         if (StringUtil.isNotBlank(taskName)) {
             TextSplitOnNumberAndName textSplitOnNumberAndName = new TextSplitOnNumberAndName(taskName);
-            tasksDAO.addTask(textSplitOnNumberAndName.getNumber(), textSplitOnNumberAndName.getName(), tagId);
+            tasksRepository.add(textSplitOnNumberAndName.getNumber(), textSplitOnNumberAndName.getName(), tagId);
         }
-        return convertVo.toVo(tasksDAO.getTasksList(tagId));
+        return convertVo.toVo(tasksRepository.getByTagId(tagId));
     }
 
     @POST
@@ -91,7 +85,7 @@ public class TasksListService {
     @Produces (MediaType.APPLICATION_JSON)
     public TaskVo updateTask(@Context final HttpServletRequest req, @Context final HttpServletResponse res,
                              @PathParam ("taskId") int taskId, TaskVi taskVi) {
-        Task task = tasksDAO.update(taskId, taskVi);
+        Task task = tasksRepository.update(taskId, taskVi);
         return convertVo.toVo(task);
     }
 

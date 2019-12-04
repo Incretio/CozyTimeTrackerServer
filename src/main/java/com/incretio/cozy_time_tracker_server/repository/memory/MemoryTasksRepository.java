@@ -1,8 +1,9 @@
-package com.incretio.cozy_time_tracker_server.dao;
+package com.incretio.cozy_time_tracker_server.repository.memory;
 
 import com.incretio.cozy_time_tracker_server.model.ex.Task;
 import com.incretio.cozy_time_tracker_server.model.pojo.TaskStatus;
 import com.incretio.cozy_time_tracker_server.model.vi.TaskVi;
+import com.incretio.cozy_time_tracker_server.repository.TasksRepository;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-public class TasksDAO {
+public class MemoryTasksRepository implements TasksRepository {
     private List<Task> tasksList = new ArrayList<>();
 
     // @formatter:off
@@ -126,33 +127,39 @@ public class TasksDAO {
     }
     // @formatter:on
 
-    public List<Task> getTasksList() {
+    @Override
+    public List<Task> getAll() {
         return tasksList;
     }
 
-    public List<Task> getTasksList(int tagId) {
+    @Override
+    public List<Task> getByTagId(int tagId) {
         if (tagId == 0) {
-            return getTasksList();
+            return getAll();
         }
         return tasksList.stream().filter(task -> task.getTagsList().contains(tagId)).collect(Collectors.toList());
     }
 
-    public Optional<Task> getTask(int taskId) {
+    @Override
+    public Optional<Task> getById(int taskId) {
         return tasksList.stream().filter(task -> task.getId() == taskId).findFirst();
     }
 
-    public List<Task> getTasksWithExclude(int taskId) {
+    @Override
+    public List<Task> getWithExclude(int taskId) {
         return tasksList.stream().filter(task -> task.getId() != taskId).collect(Collectors.toList());
     }
 
-    public Task addTask(String number, String name, int tagId) {
+    @Override
+    public Task add(String number, String name, int tagId) {
         Task addedTask = new Task(tasksList.size() + 1, tagId, number, name, "", 0, 0, 0, TaskStatus.STOPPED);
         tasksList.add(addedTask);
         return addedTask;
     }
 
+    @Override
     public Task update(int taskId, TaskVi taskVi) {
-        Task task = getTask(taskId).orElseThrow();
+        Task task = getById(taskId).orElseThrow();
         task.fillFrom(taskVi);
         return task;
     }
