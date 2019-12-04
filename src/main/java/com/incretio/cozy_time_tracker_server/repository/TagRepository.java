@@ -4,7 +4,7 @@ import com.incretio.cozy_time_tracker_server.model.ex.Tag;
 
 import java.util.List;
 
-public interface TagsRepository {
+public interface TagRepository {
 
     List<Tag> getAll();
 

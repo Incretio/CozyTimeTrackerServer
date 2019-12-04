@@ -3,7 +3,7 @@ package com.incretio.cozy_time_tracker_server.repository.memory;
 import com.incretio.cozy_time_tracker_server.model.ex.Task;
 import com.incretio.cozy_time_tracker_server.model.pojo.TaskStatus;
 import com.incretio.cozy_time_tracker_server.model.vi.TaskVi;
-import com.incretio.cozy_time_tracker_server.repository.TasksRepository;
+import com.incretio.cozy_time_tracker_server.repository.TaskRepository;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-public class MemoryTasksRepository implements TasksRepository {
+public class MemoryTaskRepository implements TaskRepository {
     private List<Task> tasksList = new ArrayList<>();
 
     // @formatter:off

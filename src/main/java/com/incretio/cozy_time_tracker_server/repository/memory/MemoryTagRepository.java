@@ -1,12 +1,12 @@
 package com.incretio.cozy_time_tracker_server.repository.memory;
 
 import com.incretio.cozy_time_tracker_server.model.ex.Tag;
-import com.incretio.cozy_time_tracker_server.repository.TagsRepository;
+import com.incretio.cozy_time_tracker_server.repository.TagRepository;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MemoryTagsRepository implements TagsRepository {
+public class MemoryTagRepository implements TagRepository {
 
     private List<Tag> tagsList = new ArrayList<>();
 

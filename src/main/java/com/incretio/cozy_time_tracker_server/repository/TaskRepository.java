@@ -6,7 +6,7 @@ import com.incretio.cozy_time_tracker_server.model.vi.TaskVi;
 import java.util.List;
 import java.util.Optional;
 
-public interface TasksRepository {
+public interface TaskRepository {
 
     List<Task> getAll();
     List<Task> getByTagId(int tagId);
