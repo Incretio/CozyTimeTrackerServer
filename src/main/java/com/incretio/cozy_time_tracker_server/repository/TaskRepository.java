@@ -2,6 +2,7 @@ package com.incretio.cozy_time_tracker_server.repository;
 
 import com.incretio.cozy_time_tracker_server.model.ex.Task;
 import com.incretio.cozy_time_tracker_server.model.vi.TaskVi;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;

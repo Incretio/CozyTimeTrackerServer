@@ -4,18 +4,22 @@ import com.incretio.cozy_time_tracker_server.model.vo.TagVo;
 import com.incretio.cozy_time_tracker_server.model.vo.helper.ConvertVo;
 import com.incretio.cozy_time_tracker_server.repository.TagRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class TagService {
 
+    private TagRepository tagRepository;
+
     @Autowired
-    private TagRepository tagsRepository;
-    @Autowired
-    private ConvertVo convertVo;
+    public TagService(TagRepository tagRepository) {
+        this.tagRepository = tagRepository;
+    }
 
     public List<TagVo> getAll() {
-        return convertVo.toVo(tagsRepository.getAll());
+        return ConvertVo.toVo(tagRepository.getAll());
     }
 
 }

@@ -4,6 +4,8 @@ import com.incretio.cozy_time_tracker_server.model.vi.TaskVi;
 import com.incretio.cozy_time_tracker_server.model.vo.TaskVo;
 import com.incretio.cozy_time_tracker_server.service.TaskService;
 import org.slf4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 
 import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
@@ -16,11 +18,17 @@ import java.util.List;
 import static org.slf4j.LoggerFactory.getLogger;
 
 @Path ("v.1")
+@Controller
 public class TaskController {
+
     private static final Logger log = getLogger(TaskController.class);
 
-    @Inject
-    private TaskService taskService;
+    private final TaskService taskService;
+
+    @Autowired
+    public TaskController(TaskService taskService) {
+        this.taskService = taskService;
+    }
 
     @GET
     @Path ("test")

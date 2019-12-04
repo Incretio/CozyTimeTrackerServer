@@ -8,38 +8,42 @@ import com.incretio.cozy_time_tracker_server.model.vo.TaskVo;
 import com.incretio.cozy_time_tracker_server.model.vo.helper.ConvertVo;
 import com.incretio.cozy_time_tracker_server.repository.TaskRepository;
 import com.incretio.cozy_time_tracker_server.utils.StringUtil;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-import javax.inject.Inject;
 import java.util.List;
 
+@Service
 public class TaskService {
 
-    @Inject
-    private TaskRepository tasksRepository;
-    @Inject
-    private ConvertVo convertVo;
+    private TaskRepository taskRepository;
+
+    @Autowired
+    public TaskService(TaskRepository taskRepository) {
+        this.taskRepository = taskRepository;
+    }
 
     public List<TaskVo> getByTagId(int tagId) {
-        return convertVo.toVo(tasksRepository.getByTagId(tagId));
+        return ConvertVo.toVo(taskRepository.getByTagId(tagId));
     }
 
     public List<TaskVo> toggleState(int taskId, int tagId) {
-        tasksRepository.getWithExclude(taskId).forEach(Task::stop);
-        tasksRepository.getById(taskId).orElseThrow(NoSuchTaskException::new).toggle();
-        return convertVo.toVo(tasksRepository.getByTagId(tagId));
+        taskRepository.getWithExclude(taskId).forEach(Task::stop);
+        taskRepository.getById(taskId).orElseThrow(NoSuchTaskException::new).toggle();
+        return ConvertVo.toVo(taskRepository.getByTagId(tagId));
     }
 
     public List<TaskVo> add(String taskName, int tagId) {
         if (StringUtil.isNotBlank(taskName)) {
             TextSplitOnNumberAndName textSplitOnNumberAndName = new TextSplitOnNumberAndName(taskName);
-            tasksRepository.add(textSplitOnNumberAndName.getNumber(), textSplitOnNumberAndName.getName(), tagId);
+            taskRepository.add(textSplitOnNumberAndName.getNumber(), textSplitOnNumberAndName.getName(), tagId);
         }
-        return convertVo.toVo(tasksRepository.getByTagId(tagId));
+        return ConvertVo.toVo(taskRepository.getByTagId(tagId));
     }
 
     public TaskVo updateTask(int taskId, TaskVi taskVi) {
-        Task task = tasksRepository.update(taskId, taskVi);
-        return convertVo.toVo(task);
+        Task task = taskRepository.update(taskId, taskVi);
+        return ConvertVo.toVo(task);
     }
 
 }
