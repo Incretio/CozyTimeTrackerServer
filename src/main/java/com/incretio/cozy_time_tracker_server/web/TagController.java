@@ -4,21 +4,21 @@ import com.incretio.cozy_time_tracker_server.model.vo.TagVo;
 import com.incretio.cozy_time_tracker_server.service.TagService;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import javax.ws.rs.CookieParam;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 
 import static org.slf4j.LoggerFactory.getLogger;
 
-@Path ("v.1")
-@Controller
+@RestController
+@RequestMapping("tag")
 public class TagController {
 
     private static final Logger log = getLogger(TagController.class);
@@ -30,11 +30,13 @@ public class TagController {
         this.tagService = tagService;
     }
 
-    @GET
-    @Path ("tags_list")
-    @Produces (MediaType.APPLICATION_JSON)
-    public List<TagVo> getAll(@Context final HttpServletRequest req, @Context final HttpServletResponse res) {
+    @GetMapping (
+        value = "list",
+        produces = MediaType.APPLICATION_JSON)
+    public List<TagVo> getAll(@Context final HttpServletRequest req,
+                              @Context final HttpServletResponse res) {
         return tagService.getAll();
     }
 
 }
+
