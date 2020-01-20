@@ -24,7 +24,7 @@ public class TaskVo extends BaseVo {
         return task.getTagsList();
     }
 
-    public String getTaskStatus() {
+    public String getStatus() {
         return task.getTaskStatus()
                    .toString();
     }

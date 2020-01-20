@@ -46,6 +46,15 @@ public class TaskController {
         return taskService.getByTagId(tagId);
     }
 
+    @GetMapping (
+        value = "{taskId}",
+        produces = MediaType.APPLICATION_JSON)
+    public TaskVo getByTaskId(@Context final HttpServletRequest req,
+                                   @Context final HttpServletResponse res,
+                                   @PathVariable ("taskId") int taskId) {
+        return taskService.getById(taskId);
+    }
+
     @PostMapping (
         value = "toggle/{taskId}/tag/{tagId}",
         produces = MediaType.APPLICATION_JSON)
@@ -75,7 +84,7 @@ public class TaskController {
                          @Context final HttpServletResponse res,
                          @PathVariable ("taskId") int taskId,
                          @RequestBody TaskVi taskVi) {
-        return taskService.updateTask(taskId, taskVi);
+        return taskService.update(taskId, taskVi);
     }
 
 }

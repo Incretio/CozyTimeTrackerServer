@@ -1,6 +1,6 @@
 package com.incretio.cozy_time_tracker_server.service;
 
-import com.incretio.cozy_time_tracker_server.exception.NoSuchTaskException;
+import com.incretio.cozy_time_tracker_server.exception.TaskNotFoundException;
 import com.incretio.cozy_time_tracker_server.helpers.TextSplitOnNumberAndName;
 import com.incretio.cozy_time_tracker_server.model.ex.Task;
 import com.incretio.cozy_time_tracker_server.model.vi.TaskVi;
@@ -27,9 +27,15 @@ public class TaskService {
         return ConvertVo.toVo(taskRepository.getByTagId(tagId));
     }
 
+    public TaskVo getById(int taskId) {
+        return taskRepository.getById(taskId)
+                             .map(Task::toVo)
+                             .orElseThrow(TaskNotFoundException::new);
+    }
+
     public List<TaskVo> toggleState(int taskId, int tagId) {
         taskRepository.getWithExclude(taskId).forEach(Task::stop);
-        taskRepository.getById(taskId).orElseThrow(NoSuchTaskException::new).toggle();
+        taskRepository.getById(taskId).orElseThrow(TaskNotFoundException::new).toggle();
         return ConvertVo.toVo(taskRepository.getByTagId(tagId));
     }
 
@@ -41,7 +47,7 @@ public class TaskService {
         return ConvertVo.toVo(taskRepository.getByTagId(tagId));
     }
 
-    public TaskVo updateTask(int taskId, TaskVi taskVi) {
+    public TaskVo update(int taskId, TaskVi taskVi) {
         Task task = taskRepository.update(taskId, taskVi);
         return ConvertVo.toVo(task);
     }
