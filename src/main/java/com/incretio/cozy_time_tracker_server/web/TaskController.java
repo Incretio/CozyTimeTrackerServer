@@ -1,7 +1,7 @@
 package com.incretio.cozy_time_tracker_server.web;
 
-import com.incretio.cozy_time_tracker_server.model.vi.TaskVi;
-import com.incretio.cozy_time_tracker_server.model.vo.TaskVo;
+import com.incretio.cozy_time_tracker_server.model.remote.vi.TaskVi;
+import com.incretio.cozy_time_tracker_server.model.remote.vo.TaskVo;
 import com.incretio.cozy_time_tracker_server.service.TaskService;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,167 +1,119 @@
 package com.incretio.cozy_time_tracker_server.repository.memory;
 
-import com.incretio.cozy_time_tracker_server.model.ex.Task;
-import com.incretio.cozy_time_tracker_server.model.pojo.TaskStatus;
-import com.incretio.cozy_time_tracker_server.model.vi.TaskVi;
+import com.incretio.cozy_time_tracker_server.model.local.task.TaskManager;
+import com.incretio.cozy_time_tracker_server.model.local.task.TaskPOJO;
+import com.incretio.cozy_time_tracker_server.model.local.taskstatus.TaskStatus;
+import com.incretio.cozy_time_tracker_server.model.remote.vi.TaskVi;
 import com.incretio.cozy_time_tracker_server.repository.TaskRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Repository
 public class MemoryTaskRepository implements TaskRepository {
-    private List<Task> tasksList = new ArrayList<>();
+    private List<TaskPOJO> tasksList = new ArrayList<>();
 
     // @formatter:off
     {
-        Task task = new Task(
-            1,
-            new ArrayList<>(Arrays.asList(1,2)),
-            "LNDR-0001",
-            "Остаток на складах шоурум выводить отдельно (ТЗ)",
-            "",
-            0,
-            0,
-            10*60*60*1000,
-            TaskStatus.STOPPED
-        );
+        TaskPOJO task = TaskPOJO.builder()
+            .id(1)
+            .tagsList(new ArrayList<>(Arrays.asList(1,2)))
+            .number("LNDR-0001")
+            .name("Остаток на складах шоурум выводить отдельно (ТЗ)")
+            .timeLimit(10*60*60*1000)
+            .build();
         tasksList.add(task);
-        task = new Task(
-            2,
-            1,
-            "LNDR-0002",
-            "Остаток на складах шоурум выводить отдельно (ТЗ)",
-            "",
-            0,
-            0,
-            60*1000,
-            TaskStatus.STOPPED
-        );
+
+        task = TaskPOJO.builder()
+            .id(2)
+            .tagsList(new ArrayList<>(Arrays.asList(1)))
+            .number("LNDR-0002")
+            .name("Остаток на складах шоурум выводить отдельно (ТЗ)")
+            .timeLimit(60*1000)
+            .build();
         tasksList.add(task);
-        task = new Task(
-            3,
-            1,
-            "LNDR-0003",
-            "Остаток на складах шоурум выводить отдельно (ТЗ)",
-            "",
-            5*60*60+38,
-            5*60*60+38,
-            10*60*60,
-            TaskStatus.STOPPED
-        );
+
+        task = TaskPOJO.builder()
+            .id(3)
+            .tagsList(new ArrayList<>(Arrays.asList(2,3)))
+            .number("LNDR-0003")
+            .name("Остаток на складах шоурум выводить отдельно (ТЗ)")
+            .timeLimit(60*1000)
+            .build();
         tasksList.add(task);
-        task = new Task(
-            4,
-            2,
-            "LNDR-0004",
-            "Остаток на складах шоурум выводить отдельно (ТЗ)",
-            "",
-            5*60*60+38,
-            5*60*60+38,
-            10*60*60,
-            TaskStatus.STOPPED
-        );
+
+        task = TaskPOJO.builder()
+            .id(4)
+            .tagsList(new ArrayList<>(Arrays.asList(3,4)))
+            .number("LNDR-0004")
+            .name("Остаток на складах шоурум выводить отдельно (ТЗ)")
+            .timeLimit(60*1000)
+            .build();
         tasksList.add(task);
-        task = new Task(
-            5,
-            2,
-            "LNDR-0005",
-            "Остаток на складах шоурум выводить отдельно (ТЗ)",
-            "",
-            5*60*60+38,
-            5*60*60+38,
-            10*60*60,
-            TaskStatus.STOPPED
-        );
+
+        task = TaskPOJO.builder()
+            .id(5)
+            .tagsList(new ArrayList<>(Arrays.asList(1,3,4)))
+            .number("LNDR-0005")
+            .name("Остаток на складах шоурум выводить отдельно (ТЗ)")
+            .timeLimit(60*1000)
+            .build();
         tasksList.add(task);
-        task = new Task(
-            6,
-            2,
-            "LNDR-0006",
-            "Остаток на складах шоурум выводить отдельно (ТЗ)",
-            "",
-            5*60*60+38,
-            5*60*60+38,
-            10*60*60,
-            TaskStatus.STOPPED
-        );
-        tasksList.add(task);
-        task = new Task(
-            7,
-            3,
-            "LNDR-0007",
-            "Остаток на складах шоурум выводить отдельно (ТЗ)",
-            "",
-            5*60*60+38,
-            5*60*60+38,
-            10*60*60,
-            TaskStatus.STOPPED
-        );
-        tasksList.add(task);
-        task = new Task(
-            8,
-            3,
-            "LNDR-0008",
-            "Остаток на складах шоурум выводить отдельно (ТЗ)",
-            "",
-            5*60*60+38,
-            5*60*60+38,
-            10*60*60,
-            TaskStatus.STOPPED
-        );
-        tasksList.add(task);
-        task = new Task(
-            9,
-            3,
-            "LNDR-0009",
-            "Остаток на складах шоурум выводить отдельно (ТЗ)",
-            "",
-            5*60*60+38,
-            5*60*60+38,
-            10*60*60,
-            TaskStatus.STOPPED
-        );
+
+        task = TaskPOJO.builder()
+            .id(6)
+            .tagsList(new ArrayList<>(Arrays.asList()))
+            .number("LNDR-0006")
+            .name("Остаток на складах шоурум выводить отдельно (ТЗ)")
+            .timeLimit(60*1000)
+            .build();
         tasksList.add(task);
     }
     // @formatter:on
 
-    @Override
-    public List<Task> getAll() {
-        return tasksList;
+    private List<TaskManager> getManagerList() {
+        return tasksList.stream().map(TaskManager::new).collect(Collectors.toList());
     }
 
     @Override
-    public List<Task> getByTagId(int tagId) {
+    public List<TaskManager> getAll() {
+        return getManagerList();
+    }
+
+    @Override
+    public List<TaskManager> getByTagId(int tagId) {
         if (tagId == 0) {
             return getAll();
         }
-        return tasksList.stream().filter(task -> task.getTagsList().contains(tagId)).collect(Collectors.toList());
+        return getManagerList().stream().filter(task -> task.getTagsList().contains(tagId)).collect(Collectors.toList());
     }
 
     @Override
-    public Optional<Task> getById(int taskId) {
-        return tasksList.stream().filter(task -> task.getId() == taskId).findFirst();
+    public Optional<TaskManager> getById(int taskId) {
+        return getManagerList().stream().filter(task -> task.getId() == taskId).findFirst();
     }
 
     @Override
-    public List<Task> getWithExclude(int taskId) {
-        return tasksList.stream().filter(task -> task.getId() != taskId).collect(Collectors.toList());
+    public List<TaskManager> getWithExclude(int taskId) {
+        return getManagerList().stream().filter(task -> task.getId() != taskId).collect(Collectors.toList());
     }
 
     @Override
-    public Task add(String number, String name, int tagId) {
-        Task addedTask = new Task(tasksList.size() + 1, tagId, number, name, "", 0, 0, 0, TaskStatus.STOPPED);
-        tasksList.add(addedTask);
-        return addedTask;
+    public TaskManager add(String number, String name, int tagId) {
+        TaskPOJO taskPOJO = TaskPOJO.builder()
+                                    .id(tasksList.size() + 1)
+                                    .tagsList(Collections.singletonList(tagId))
+                                    .number(number)
+                                    .name(name)
+                                    .build();
+        tasksList.add(taskPOJO);
+        return new TaskManager(taskPOJO);
     }
 
     @Override
-    public Task update(int taskId, TaskVi taskVi) {
-        Task task = getById(taskId).orElseThrow();
+    public TaskManager update(int taskId, TaskVi taskVi) {
+        TaskManager task = getById(taskId).orElseThrow();
         task.fillFrom(taskVi);
         return task;
     }

@@ -1,4 +1,4 @@
-package com.incretio.cozy_time_tracker_server.model.vi;
+package com.incretio.cozy_time_tracker_server.model.remote.vi;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

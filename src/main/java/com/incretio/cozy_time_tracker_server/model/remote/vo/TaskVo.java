@@ -1,18 +1,15 @@
-package com.incretio.cozy_time_tracker_server.model.vo;
+package com.incretio.cozy_time_tracker_server.model.remote.vo;
 
-import com.incretio.cozy_time_tracker_server.model.ex.Task;
+import com.incretio.cozy_time_tracker_server.model.local.task.TaskManager;
+import com.incretio.cozy_time_tracker_server.model.remote.vo.helper.ConvertVo;
 import com.incretio.cozy_time_tracker_server.utils.DateTimeUtil;
 
 import java.util.List;
 
 public class TaskVo extends BaseVo {
-    private final Task task;
+    private final TaskManager task;
 
-    public TaskVo() {
-        task = new Task();
-    }
-
-    public TaskVo(Task task) {
+    public TaskVo(TaskManager task) {
         this.task = task;
     }
 
@@ -30,21 +27,15 @@ public class TaskVo extends BaseVo {
     }
 
     public int getProgress() {
-        if (task.getTimeLimit() == 0) {
-            return 0;
-        } else if (task.getTimeLeftAll() >= task.getTimeLimit()) {
-            return 100;
-        } else {
-            return (int) Math.round(1.0 * task.getTimeLeftAll() / task.getTimeLimit() * 100);
-        }
+        return task.getProgress();
     }
 
     public String getTimeLeftToday() {
-        return DateTimeUtil.msToTimeString(task.getTimeLeftToday());
+        return DateTimeUtil.msToTimeString(task.getTimeLeftTodayInMs());
     }
 
     public String getTimeLeftAll() {
-        return DateTimeUtil.msToTimeString(task.getTimeLeftAll());
+        return DateTimeUtil.msToTimeString(task.getTimeLeftAllInMs());
     }
 
     public String getTimeLimit() {
@@ -61,6 +52,10 @@ public class TaskVo extends BaseVo {
 
     public String getDescription() {
         return task.getDescription();
+    }
+
+    public List<TimeIntervalVo> getTimeIntervalList() {
+        return ConvertVo.toVo(task.getTimeIntervalList());
     }
 
 }

@@ -1,7 +1,7 @@
 package com.incretio.cozy_time_tracker_server.service;
 
-import com.incretio.cozy_time_tracker_server.model.vo.TagVo;
-import com.incretio.cozy_time_tracker_server.model.vo.helper.ConvertVo;
+import com.incretio.cozy_time_tracker_server.model.remote.vo.TagVo;
+import com.incretio.cozy_time_tracker_server.model.remote.vo.helper.ConvertVo;
 import com.incretio.cozy_time_tracker_server.repository.TagRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,7 +19,7 @@ public class TagService {
     }
 
     public List<TagVo> getAll() {
-        return ConvertVo.toVo(tagRepository.getAll());
+        return ConvertVo.toVo(tagRepository.getAllInManager());
     }
 
 }

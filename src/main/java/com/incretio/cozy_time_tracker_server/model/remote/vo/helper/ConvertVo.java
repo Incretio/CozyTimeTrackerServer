@@ -1,6 +1,6 @@
-package com.incretio.cozy_time_tracker_server.model.vo.helper;
+package com.incretio.cozy_time_tracker_server.model.remote.vo.helper;
 
-import com.incretio.cozy_time_tracker_server.model.vo.BaseVo;
+import com.incretio.cozy_time_tracker_server.model.remote.vo.BaseVo;
 
 import java.util.List;
 import java.util.stream.Collectors;
