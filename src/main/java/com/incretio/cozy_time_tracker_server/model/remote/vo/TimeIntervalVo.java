@@ -1,8 +1,7 @@
 package com.incretio.cozy_time_tracker_server.model.remote.vo;
 
 import com.incretio.cozy_time_tracker_server.model.local.timeinterval.TimeIntervalManager;
-
-import java.util.Date;
+import org.joda.time.DateTime;
 
 public class TimeIntervalVo extends BaseVo {
     private final TimeIntervalManager timeInterval;
@@ -11,12 +10,16 @@ public class TimeIntervalVo extends BaseVo {
         this.timeInterval = timeInterval;
     }
 
-    public Date getStart() {
-        return timeInterval.getStart();
+    public String getStart() {
+        return new DateTime(timeInterval.getStart().getTime()).toString("HH:mm:ss");
     }
 
-    public Date getStop() {
-        return timeInterval.getStop();
+    public String getStop() {
+        return new DateTime(timeInterval.getCalculatedStopInMs()).toString("HH:mm:ss");
+    }
+
+    public String getTotal() {
+        return new DateTime(timeInterval.getTotalInMs()).toString("HH:mm:ss");
     }
 
     public String getMessage() {

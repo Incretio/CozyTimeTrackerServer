@@ -49,7 +49,7 @@ public class TimeIntervalManager implements ToVoConvertable<TimeIntervalVo>  {
         long startDayInMs = new DateTime(date).withTimeAtStartOfDay().getMillis();
         long stopDayInMs = new DateTime(date).plusDays(1).withTimeAtStartOfDay().getMillis();
         long startInMs = getStart().getTime();
-        long stopInMs = getCalculatedStop();
+        long stopInMs = getCalculatedStopInMs();
 
         if (stopInMs < startDayInMs || startInMs > stopDayInMs) {
             return 0;
@@ -65,15 +65,20 @@ public class TimeIntervalManager implements ToVoConvertable<TimeIntervalVo>  {
         if (getStart() == null) {
             return 0;
         }
-        return getCalculatedStop() - getStart().getTime();
+        return getCalculatedStopInMs() - getStart().getTime();
     }
 
-    private long getCalculatedStop() {
+    public long getCalculatedStopInMs() {
         if (getStop() == null) {
             return new Date().getTime();
         } else {
             return getStop().getTime();
         }
+    }
+
+    public long getTotalInMs() {
+        long diff = getCalculatedStopInMs() - getStart().getTime();
+        return DateTime.now().withTimeAtStartOfDay().plusMillis((int)diff).getMillis();
     }
 
 }

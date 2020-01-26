@@ -4,6 +4,7 @@ import com.incretio.cozy_time_tracker_server.model.local.task.TaskManager;
 import com.incretio.cozy_time_tracker_server.model.remote.vo.helper.ConvertVo;
 import com.incretio.cozy_time_tracker_server.utils.DateTimeUtil;
 
+import java.util.Collections;
 import java.util.List;
 
 public class TaskVo extends BaseVo {
@@ -55,7 +56,9 @@ public class TaskVo extends BaseVo {
     }
 
     public List<TimeIntervalVo> getTimeIntervalList() {
-        return ConvertVo.toVo(task.getTimeIntervalList());
+        List<TimeIntervalVo> result = ConvertVo.toVo(task.getTimeIntervalList());
+        Collections.reverse(result);
+        return result;
     }
 
 }
