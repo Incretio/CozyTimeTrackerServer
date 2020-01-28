@@ -15,10 +15,4 @@ public class TimeIntervalPOJO {
     @Getter @Setter private Date stop;
     @Getter @Setter private String message = "";
 
-    public TimeIntervalPOJO(TimeIntervalPOJO timeIntervalPOJO) {
-        this.start = timeIntervalPOJO.start;
-        this.stop = timeIntervalPOJO.stop;
-        this.message = timeIntervalPOJO.message;
-    }
-
 }

@@ -3,6 +3,7 @@ package com.incretio.cozy_time_tracker_server.repository.memory;
 import com.incretio.cozy_time_tracker_server.model.local.tag.TagManager;
 import com.incretio.cozy_time_tracker_server.model.local.tag.TagPOJO;
 import com.incretio.cozy_time_tracker_server.repository.TagRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -11,25 +12,21 @@ import java.util.stream.Collectors;
 
 @Repository
 public class MemoryTagRepository implements TagRepository {
+    private final SharedMemoryData sharedMemoryData;
 
-    private List<TagPOJO> tagsList = new ArrayList<>();
-
-    {
-        tagsList.add(new TagPOJO(0, "Все"));
-        tagsList.add(new TagPOJO(1, "Спринт"));
-        tagsList.add(new TagPOJO(2, "Lunda.ru"));
-        tagsList.add(new TagPOJO(3, "Lunda.se"));
-        tagsList.add(new TagPOJO(4, "Purchase"));
+    @Autowired
+    public MemoryTagRepository(SharedMemoryData sharedMemoryData) {
+        this.sharedMemoryData = sharedMemoryData;
     }
 
     @Override
     public List<TagPOJO> getAll() {
-        return tagsList;
+        return sharedMemoryData.getTagsList();
     }
 
     @Override
     public List<TagManager> getAllInManager() {
-        return tagsList.stream().map(TagManager::new).collect(Collectors.toList());
+        return sharedMemoryData.getTagsList().stream().map(TagManager::new).collect(Collectors.toList());
     }
 
 }

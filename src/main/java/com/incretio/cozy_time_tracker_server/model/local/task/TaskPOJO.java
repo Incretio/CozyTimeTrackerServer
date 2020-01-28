@@ -27,18 +27,6 @@ public class TaskPOJO extends BaseModel {
     @Builder.Default
     @Getter @Setter (AccessLevel.PROTECTED) TaskStatus taskStatus = TaskStatus.STOPPED;
     @Builder.Default
-    @Getter (AccessLevel.PROTECTED) List<TimeIntervalPOJO> timeIntervalPOJOList = new ArrayList<>();
+    @Getter List<TimeIntervalPOJO> timeIntervalPOJOList = new ArrayList<>();
 
-//    public TaskPOJO(TaskPOJO fromObject) {
-//        this.id = fromObject.id;
-//        this.tagsList = fromObject.tagsList;
-//        this.number = fromObject.number;
-//        this.name = fromObject.name;
-//        this.description = fromObject.description;
-//        this.timeLeftToday = fromObject.timeLeftToday;
-//        this.timeLeftAll = fromObject.timeLeftAll;
-//        this.timeLimit = fromObject.timeLimit;
-//        this.taskStatus = fromObject.taskStatus;
-//        this.timeIntervalPOJOList = fromObject.timeIntervalPOJOList;
-//    }
 }

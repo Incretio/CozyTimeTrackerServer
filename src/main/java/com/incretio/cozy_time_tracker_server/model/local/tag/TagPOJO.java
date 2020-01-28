@@ -11,10 +11,6 @@ public class TagPOJO extends BaseModel {
     @Getter protected int id;
     @Getter protected String name;
 
-//    public TagPOJO(TagPOJO tagPOJO) {
-//        this.id = tagPOJO.id;
-//        this.name = tagPOJO.name;
-//    }
 }
 
 
